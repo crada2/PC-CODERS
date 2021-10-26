@@ -1,4 +1,5 @@
-let coders = [
+export const paCoders = [
+    
     {
         nombre: "Cecilia",
     },
@@ -19,3 +20,5 @@ let coders = [
     }
 
 ]
+console.log(paCoders);
+//export const limbo = []
