@@ -1,24 +1,32 @@
-export const paCoders = [
+export const listaCoders = [
     
     {
-        nombre: "Cecilia",
+        name: "Cecilia",
     },
     {
-        nombre: "Sol",
+        name: "Sol",
     },
     {
-        nombre: "Luidmila",
+        name: "Luidmila",
     },
     {
-        nombre: "Mayu",
+        name: "Mayu",
     },
     {
-        nombre: "Miquel",
+        name: "Miquel",
     },
     {
-        nombre: "Abde",
+        name: "Abde",
     }
 
 ]
-console.log(paCoders);
+//console.log(listaCoders);
 //export const limbo = []
+let DomListaCoders = document.getElementById("pa-coders");
+function printListCoders(object) {
+    DomListaCoders.innerHTML += `<p>${object.name}</p>`
+}
+function loadName() {
+    listaCoders.forEach((object) => printListCoders(object);
+}
+loadName();
