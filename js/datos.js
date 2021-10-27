@@ -18,7 +18,7 @@ const listaCoders = [
     nombre: "Abde",
   },
 ];
-
+//pinta array de nombres en DOM
 let DOMlistaCoders = document.querySelector("#pac-coders");
 
 function printlistaCoders(object) {
@@ -30,3 +30,6 @@ function loadName() {
 }
 
 loadName();
+
+
+
