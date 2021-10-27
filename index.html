@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>PC-Coders</title>
+    <title>Pa-coders</title>
   </head>
-
   <body>
     <header>
       <img src="" alt="logo y nombre de pacoders" />
@@ -17,8 +16,20 @@
       <button id="boton_inicio">START</button>
       <button id="boton_reiniciar">RESET</button>
       <section class="coders">
-        <article>
-          <ul class="pa-coders"></ul>
+        <article class="lista_vivos">
+          <img
+            class="fantasma_vivo"
+            src="./images/pac_blue.png"
+            alt="fantasma rojo de pacman"
+          />
+          <ul id="pac-coders"></ul>
+        </article>
+        <article class="lista_muertos">
+          <img
+            src="./images/fantasmamuerto.png"
+            alt="fantasma muerto de pacman"
+          />
+          <ul id="pacoders_muertos"></ul>
         </article>
       </section>
 

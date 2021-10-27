@@ -1,11 +1,10 @@
-
 @import url(./reset.css);
 @import url(./main.css);
 
 body {
   background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
-.coder {
+.coders {
   width: 100%;
   margin-top: 195px;
   display: flex;
@@ -13,5 +12,4 @@ body {
   font-family: verdana;
   font-size: 24px;
   position: absolute;
-
 }

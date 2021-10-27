@@ -1,29 +1,32 @@
-const listCoders = [
+const listaCoders = [
   {
-    name: "Cecilia",
+    nombre: "Ceci",
   },
   {
-    name: "Sol",
+    nombre: "Miquel",
   },
   {
-    name: "Luidmila",
+    nombre: "Sol",
   },
   {
-    name: "Mayu",
+    nombre: "Mayu",
   },
   {
-    name: "Miquel",
+    nombre: "Ludmila",
   },
   {
-    name: "Abde",
+    nombre: "Abde",
   },
 ];
 
-let DOMlistCoders = document.querySelector("#pa-coders");
-function printlistCoders(object) {
-  DOMlistCoders.innerHTML += `<p>${object.name}</p>`;
+let DOMlistaCoders = document.querySelector("#pac-coders");
+
+function printlistaCoders(object) {
+  DOMlistaCoders.innerHTML += `<p>${object.nombre}</p>`;
 }
+
 function loadName() {
-  listCoders.forEach((object) => printlistCoders(object));
+  listaCoders.forEach((object) => printlistaCoders(object));
 }
+
 loadName();
