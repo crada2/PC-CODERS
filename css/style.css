@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  margin-top: 4%;
+  margin-top: 3%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -23,6 +23,8 @@ h1 {
   color: yellow;
   font-size: 50px;
 }
+
+
 .coders {
   width: 100%;
   margin-top: 195px;
