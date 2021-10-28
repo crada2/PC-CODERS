@@ -18,18 +18,30 @@ const listaCoders = [
     nombre: "Abde",
   },
 ];
-//pinta array de nombres en DOM
-let DOMlistaCoders = document.querySelector("#pac-coders");
 
-function printlistaCoders(object) {
-  DOMlistaCoders.innerHTML += `<p>${object.nombre}</p>`;
+
+function printListaCoders() {
+  let listaCoder = document.querySelector('.pac-coders');
+  listaCoder.innerHTML = " ";
+
+  listaCoders.forEach(function (object){
+    listaCoder.innerHTML += `<li>${object.nombre}</li>`;
+  });
+
 }
 
-function loadName() {
-  listaCoders.forEach((object) => printlistaCoders(object));
+let deathCoders = [];
+
+function printMuertos() {
+  let listaMuerto = document.querySelector('#pacoders_muertos');
+  listaMuerto.innerHTML = " ";
+
+  deathCoders.forEach(function(object){
+    listaMuerto.innerHTML += `<li>${object.nombre}</li>`;
+  });
 }
 
-loadName();
+printListaCoders();
 
 
 
