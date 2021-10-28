@@ -75,23 +75,9 @@ h1 {
   margin-bottom: 10px;
 }
 
-@media (max-width:481px)  {
-
-  body{
-    background-color: #bd280d;
-
+@media (max-width: 800px) {
+  .coders {
+    margin-top: 89px;
+    flex-direction: column;
   }
-  .fantasma_muerto{
-    height: 50px;
-  }
-
-  @media (max-width:781px)  {
-
-    body{
-      background-color: #9c3421;
-    }
-    .fantasma_muerto{
-      height: 20px;
-    }
-  
 }
