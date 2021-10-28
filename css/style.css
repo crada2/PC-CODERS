@@ -4,6 +4,18 @@
 body {
   background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: Georgia;
+  color: yellow;
+  font-size: 50px;
+}
 .coders {
   width: 100%;
   margin-top: 195px;
