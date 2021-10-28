@@ -12,6 +12,7 @@ body {
   font-family: verdana;
   font-size: 24px;
   position: absolute;
+  
 }
 
 #boton_inicio{
@@ -20,13 +21,9 @@ body {
     border-color: #204d74;
 }
 .lista_muertos{
-     
-        color: #3c763d;
+        color: #bd280d;
         background-color: #dff0d8;
         border-color: #d6e9c6;
-    }
-    
-    .lista_muertos {
         padding: 15px;
         /* margin-bottom: 24px; */
         border: 1px solid transparent;
@@ -35,3 +32,23 @@ body {
         width: 23%;
         margin-left: 40%;
     }
+.lista_vivos{
+  background-color: #3c763d;
+  border-color: #d6e9c6;
+  padding: 15px;
+  /* margin-bottom: 24px; */
+  border: 1px solid transparent;
+  border-radius: 4px;
+  height: 10%;
+  width: 23%;
+}
+.fantasma_vivo{
+  height: 100px;
+  margin-top: -80px;
+  margin-bottom: 10px;
+}
+.fantasma_muerto{
+  height: 100px;
+  margin-top: -80px;
+  margin-bottom: 10px;
+}

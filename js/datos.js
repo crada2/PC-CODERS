@@ -43,5 +43,20 @@ function printMuertos() {
 
 printListaCoders();
 
+function killCoder() {
+  let randomKill = Math.floor(Math.random()* listaCoders.length);
+  if (listaCoders.length > 0) {
+    let programadorMuerto = listaCoders.splice(randomKill,1).pop();
+    deathCoders.push(programadorMuerto);
+    printListaCoders();
+    printMuertos();
+  }
+}
+
+let boton = document.querySelector("#boton_inicio");
+boton.addEventListener("click", killCoder );
+
+
+
 
 
