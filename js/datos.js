@@ -19,24 +19,22 @@ const listaCoders = [
   },
 ];
 
-
 function printListaCoders() {
-  let listaCoder = document.querySelector('.pac-coders');
+  let listaCoder = document.querySelector(".pac-coders");
   listaCoder.innerHTML = " ";
 
-  listaCoders.forEach(function (object){
+  listaCoders.forEach(function (object) {
     listaCoder.innerHTML += `<li>${object.nombre}</li>`;
   });
-
 }
 
 let deathCoders = [];
 
 function printMuertos() {
-  let listaMuerto = document.querySelector('#pacoders_muertos');
+  let listaMuerto = document.querySelector("#pacoders_muertos");
   listaMuerto.innerHTML = " ";
 
-  deathCoders.forEach(function(object){
+  deathCoders.forEach(function (object) {
     listaMuerto.innerHTML += `<li>${object.nombre}</li>`;
   });
 }
@@ -44,9 +42,9 @@ function printMuertos() {
 printListaCoders();
 
 function killCoder() {
-  let randomKill = Math.floor(Math.random()* listaCoders.length);
+  let randomKill = Math.floor(Math.random() * listaCoders.length);
   if (listaCoders.length > 0) {
-    let programadorMuerto = listaCoders.splice(randomKill,1).pop();
+    let programadorMuerto = listaCoders.splice(randomKill, 1).pop();
     deathCoders.push(programadorMuerto);
     printListaCoders();
     printMuertos();
@@ -54,9 +52,10 @@ function killCoder() {
 }
 
 let boton = document.querySelector("#boton_inicio");
-boton.addEventListener("click", killCoder );
+boton.addEventListener("click", killCoder);
 
+let reset = document.getElementById("boton_reiniciar");
 
-
-
-
+reset.addEventListener("click", (_) => {
+  location.reload();
+});
