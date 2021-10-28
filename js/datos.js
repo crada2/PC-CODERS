@@ -54,6 +54,8 @@ function killCoder() {
 let boton = document.querySelector("#boton_inicio");
 boton.addEventListener("click", killCoder);
 
+//que facil fue mayu manda no tu panda
+
 let reset = document.getElementById("boton_reiniciar");
 
 reset.addEventListener("click", (_) => {
