@@ -31,13 +31,16 @@ printListaCoders();
 
 let deathCoders = [];
 
-function printMuertos() {
+function printMuertos(coderstring) {
   let listaMuerto = document.querySelector("#pacoders_muertos");
-  listaMuerto.innerHTML = " ";
 
-  deathCoders.forEach(function (object) {
-    listaMuerto.innerHTML += `<li>${object.nombre}</li>`;
-  });
+  let html = "";
+  
+  deathCoders.forEach((coder) => {
+    html += `<li>${coder}</li>`;
+  })
+ 
+  listaMuerto.innerHTML = html;
 }
 
 
@@ -45,19 +48,17 @@ function printMuertos() {
 function killCoder() {
   let randomKill = Math.floor(Math.random() * listaCoders.length);
   if (listaCoders.length > 0) {
-    let programadorMuerto = listaCoders.splice(randomKill, 1).pop();
-    deathCoders.push(programadorMuerto);
+    let programadorMuerto = listaCoders.splice(randomKill, 1);
+    let stringCoder = programadorMuerto.pop().nombre;
+    deathCoders.push(stringCoder);
     printListaCoders();
-    //console.log(printListaCoders);
-    printMuertos();
+    printMuertos(stringCoder);
   }
 }
 
 let boton = document.querySelector("#boton_inicio");
 boton.addEventListener("click", killCoder);
-//console.log(boton);
 
-//que facil fue mayu manda no tu panda
 
 let reset = document.getElementById("boton_reiniciar");
 
