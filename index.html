@@ -12,8 +12,12 @@
       <h1>Pa-Coders</h1>
     </header>
     <main>
-      <button id="boton_inicio">START</button>
-      <button id="boton_reiniciar">RESET</button>
+      <section>
+        <button id="boton_reiniciar">RESET</button>
+        <input type="text" id="newCoder" placeholder="who will be next?" />
+        <button id="add_coder">Enter Coder</button>
+        <button id="boton_inicio">KILL</button>
+      </section>
       <section class="coders">
         <article class="lista_vivos">
           <img
@@ -21,26 +25,19 @@
             src="./images/pac_blue.png"
             alt="fantasma rojo de pacman"
           />
-          <ul class="pac-coders"></ul>
+          <ul class="pac-vivos"></ul>
         </article>
         <article class="lista_muertos">
-          <img class="fantasma_muerto"
+          <img
+            class="fantasma_muerto"
             src="./images/fantasmamuerto.png"
             alt="fantasma muerto de pacman"
           />
-          <ul id="pacoders_muertos">
-
-          </ul>
+          <ul class="pac-muertos"></ul>
         </article>
       </section>
-
-      <div>
-        <button id="start_boton">CHECK YOUR LOCKE</button>
-      </div>
     </main>
-    <footer>
-      <img src="" alt="" />
-    </footer>
+    <footer></footer>
 
     <script src="./js/datos.js" type="module"></script>
   </body>

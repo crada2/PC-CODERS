@@ -2,12 +2,12 @@
 @import url(./main.css);
 @font-face {
   font-family: PAC-FONT;
-  format:("truetype");
+  format: ("truetype");
   src: url(../images/PAC-FONT.TTF);
-} 
+}
 
 body {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-color: black;
 }
 
 header {
@@ -23,7 +23,6 @@ h1 {
   color: yellow;
   font-size: 50px;
 }
-
 
 .coders {
   width: 100%;
@@ -88,6 +87,5 @@ h1 {
   .lista_muertos {
     margin-top: 89px;
     flex-direction: column;
-    
   }
 }
