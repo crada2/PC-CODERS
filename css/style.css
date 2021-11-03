@@ -3,13 +3,13 @@
 @font-face {
   font-family: PAC-FONT;
   format: ("truetype");
-  src: url(../images/PAC-FONT.TTF);
+  src: url(../fonts/PAC-FONT.TTF);
 }
 
 @font-face {
   font-family: CV Pixelado;
   format: ("truetype");
-  src: url(../images/cv\ pixelado.ttf);
+  src: url(../fonts/cv\ pixelado.ttf);
 }
 
 body {
@@ -31,11 +31,11 @@ h1 {
 }
 
 .botones {
-position: absolute;
-margin-top: 20px;
-display: flex;
-width: 100%;
-justify-content: space-between;
+  position: absolute;
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 #boton_reiniciar {
@@ -49,7 +49,7 @@ justify-content: space-between;
   /* border-top: none; */
   /* border-left: none; */
   /* border-right: none; */
-  background: linear-gradient(#469e3f,#255b20);
+  background: linear-gradient(#469e3f, #255b20);
   color: white;
   border-radius: 0px 15px 15px 0px;
   box-shadow: 0px 2px 10px grey;
@@ -63,8 +63,8 @@ justify-content: space-between;
   border: none;
   border-bottom: 2px solid steelblue;
   box-shadow: 0px 1px 5px grey;
-  background: linear-gradient(#255b20,#469e3f);
-  color: #FFF;
+  background: linear-gradient(#255b20, #469e3f);
+  color: #fff;
 }
 
 .coders {
@@ -78,43 +78,42 @@ justify-content: space-between;
 }
 
 #boton_inicio {
-    display: block;
-    margin: 0 auto;
-    width: 35%;
-    height: 70px;
-    font-family: verdana;
-    border-bottom: 5px solid #EDDC1C;
-    justify-content: center;
-    /* border-top: none; */
-    /* border-left: none; */
-    /* border-right: none; */
-    background: linear-gradient(#f3e762,#c2b30d);
-    color: rgb(3, 3, 3);
-    border-radius: 15px 0px 0px 15px;
-    box-shadow: 0px 2px 10px grey;
-    transition: 150ms ease;
-    text-align: center;
-    line-height: 50px;
-    font-weight: bold;
-  }
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+  height: 70px;
+  font-family: verdana;
+  border-bottom: 5px solid #eddc1c;
+  justify-content: center;
+  /* border-top: none; */
+  /* border-left: none; */
+  /* border-right: none; */
+  background: linear-gradient(#f3e762, #c2b30d);
+  color: rgb(3, 3, 3);
+  border-radius: 15px 0px 0px 15px;
+  box-shadow: 0px 2px 10px grey;
+  transition: 150ms ease;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+}
 
-  #boton_inicio:active {
-    border: none;
-    border-bottom: 2px solid steelblue;
-    box-shadow: 0px 1px 5px grey;
-    background: linear-gradient(#e0cc12,#f7f312);
-    color: rgb(5, 5, 5);
-  }
+#boton_inicio:active {
+  border: none;
+  border-bottom: 2px solid steelblue;
+  box-shadow: 0px 1px 5px grey;
+  background: linear-gradient(#e0cc12, #f7f312);
+  color: rgb(5, 5, 5);
+}
 
-  #add_coder {
-    display:flex;
-    margin-top: 15%;
-
-  }
-  #newCoder {
-     display: flex;
-     margin-top: 15%;
-  }
+#add_coder {
+  display: flex;
+  margin-top: 15%;
+}
+#newCoder {
+  display: flex;
+  margin-top: 15%;
+}
 
 .lista_muertos {
   font-family: CV Pixelado;
@@ -124,7 +123,7 @@ justify-content: space-between;
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+
   color: #bd280d;
   padding-top: 4rem;
   padding-left: 0.5rem;
@@ -141,7 +140,7 @@ justify-content: space-between;
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+
   color: #fff;
   padding-top: 4rem;
   padding-left: 0.5rem;
@@ -163,10 +162,9 @@ justify-content: space-between;
 }
 
 footer {
- position: relative;
- display: flex;
- margin-top: 70%;
- 
+  position: relative;
+  display: flex;
+  margin-top: 70%;
 }
 #Pcman {
   width: 30%;
