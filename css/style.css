@@ -6,6 +6,12 @@
   src: url(../images/PAC-FONT.TTF);
 }
 
+@font-face {
+  font-family: CV Pixelado;
+  format: ("truetype");
+  src: url(../images/cv\ pixelado.ttf);
+}
+
 body {
   background-color: black;
 }
@@ -24,6 +30,43 @@ h1 {
   font-size: 50px;
 }
 
+.botones {
+position: absolute;
+margin-top: 20px;
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+
+#boton_reiniciar {
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+  height: 70px;
+  font-family: verdana;
+  border-bottom: 5px solid #173814;
+  justify-content: center;
+  /* border-top: none; */
+  /* border-left: none; */
+  /* border-right: none; */
+  background: linear-gradient(#469e3f,#255b20);
+  color: white;
+  border-radius: 0px 15px 15px 0px;
+  box-shadow: 0px 2px 10px grey;
+  transition: 150ms ease;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+#boton_reiniciar:active {
+  border: none;
+  border-bottom: 2px solid steelblue;
+  box-shadow: 0px 1px 5px grey;
+  background: linear-gradient(#255b20,#469e3f);
+  color: #FFF;
+}
+
 .coders {
   width: 100%;
   margin-top: 195px;
@@ -35,40 +78,75 @@ h1 {
 }
 
 #boton_inicio {
-  color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
-}
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+    height: 70px;
+    font-family: verdana;
+    border-bottom: 5px solid #EDDC1C;
+    justify-content: center;
+    /* border-top: none; */
+    /* border-left: none; */
+    /* border-right: none; */
+    background: linear-gradient(#f3e762,#c2b30d);
+    color: rgb(3, 3, 3);
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 0px 2px 10px grey;
+    transition: 150ms ease;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+  }
+
+  #boton_inicio:active {
+    border: none;
+    border-bottom: 2px solid steelblue;
+    box-shadow: 0px 1px 5px grey;
+    background: linear-gradient(#e0cc12,#f7f312);
+    color: rgb(5, 5, 5);
+  }
+
+  #add_coder {
+    display:flex;
+    margin-top: 15%;
+
+  }
+  #newCoder {
+     display: flex;
+     margin-top: 15%;
+  }
 
 .lista_muertos {
+  font-family: CV Pixelado;
+  font-size: 1.8em;
+  letter-spacing: 0.15em;
+  line-height: 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-radius: 10px;
-  line-height: 30px;
+  
   color: #bd280d;
-  //background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
   padding-top: 4rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 1em;
-  border: 1px solid transparent;
   width: 37%;
 }
 
 .lista_vivos {
+  font-family: CV Pixelado;
+  font-size: 1.8em;
+  letter-spacing: 0.15em;
+  line-height: 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-radius: 10px;
-  line-height: 30px;
+  
   color: #fff;
-  //background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
   padding-top: 4rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 1em;
-  border: 1px solid transparent;
   width: 37%;
 }
 
@@ -88,6 +166,7 @@ footer {
  position: relative;
  display: flex;
  margin-top: 70%;
+ 
 }
 #Pcman {
   width: 30%;
@@ -101,11 +180,4 @@ footer {
   position: relative;
   cursor: pointer;
   margin-top: 3.9vh;
-}
-
-@media (max-width: 800px) {
-  .lista_muertos {
-    margin-top: 89px;
-    flex-direction: column;
-  }
 }

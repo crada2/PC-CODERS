@@ -8,41 +8,43 @@
     <title>Pa-coders</title>
   </head>
   <body>
-    <header>
-      <h1>Pa-Coders</h1>
-    </header>
-    <main>
-      <section>
-        <button id="boton_reiniciar">RESET</button>
-        <input type="text" id="newCoder" placeholder="who will be next?" />
-        <button id="add_coder">Enter Coder</button>
-        <button id="boton_inicio">KILL</button>
-      </section>
-      <section class="coders">
-        <article class="lista_vivos">
-          <img
-            class="fantasma_vivo"
-            src="./images/pac_blue.png"
-            alt="fantasma rojo de pacman"
-          />
-          <ul class="pac-vivos"></ul>
-        </article>
-        <article class="lista_muertos">
-          <img
-            class="fantasma_muerto"
-            src="./images/fantasmamuerto.png"
-            alt="fantasma muerto de pacman"
-          />
-          <ul class="pac-muertos"></ul>
-        </article>
-      </section>
+    <div class="container">
+      <header class="tituloLogo">
+        <h1>Pa-Coders</h1>
+      </header>
+      <main>
+        <section class="botones">
+          <button id="boton_reiniciar">RESET</button>
+          <input type="text" id="newCoder" placeholder="who will be next?" />
+          <button id="add_coder">Enter Coder</button>
+          <button id="boton_inicio">KILL</button>
+        </section>
+        <section class="coders">
+          <article class="lista_vivos">
+            <img
+              class="fantasma_vivo"
+              src="./images/pac_blue.png"
+              alt="fantasma rojo de pacman"
+            />
+            <ul class="pac-vivos"></ul>
+          </article>
+          <article class="lista_muertos">
+            <img
+              class="fantasma_muerto"
+              src="./images/fantasmamuerto.png"
+              alt="fantasma muerto de pacman"
+            />
+            <ul class="pac-muertos"></ul>
+          </article>
+        </section>
+      
+      </main>
+      <footer>
+        <img id="Pcman" src="./images/pac-man.gif" alt="">
+        <img id="Gosht" src="./images/source.gif" alt="">
+      </footer>
+    </div>
     
-    </main>
-    <footer>
-      <img id="Pcman" src="./images/pac-man.gif" alt="">
-      <img id="Gosht" src="./images/source.gif" alt="">
-    </footer>
-
     <script src="./js/datos.js" type="module"></script>
     <script src="./js/animations.js" type="module"></script>
   </body>
