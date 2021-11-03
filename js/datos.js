@@ -3,7 +3,7 @@ let listaMuertos = [];
 
 let ulVivos = document.querySelector(".pac-vivos");
 let ulMuertos = document.querySelector(".pac-muertos");
-let botonMatar = document.querySelector("#boton_inicio");
+export let botonMatar = document.querySelector("#boton_inicio");
 let botonReset = document.querySelector("#boton_reiniciar");
 let botonAdd = document.querySelector("#add_coder");
 let inputNuevoCoder = document.querySelector("#newCoder");

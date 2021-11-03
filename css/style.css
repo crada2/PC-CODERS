@@ -47,7 +47,7 @@ h1 {
   border-radius: 10px;
   line-height: 30px;
   color: #bd280d;
-  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+  //background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
   padding-top: 4rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -62,7 +62,8 @@ h1 {
   flex-direction: column;
   border-radius: 10px;
   line-height: 30px;
-  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+  color: #fff;
+  //background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
   padding-top: 4rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -81,6 +82,25 @@ h1 {
   height: 100px;
   margin-top: -80px;
   margin-bottom: 10px;
+}
+
+footer {
+ position: relative;
+ display: flex;
+ margin-top: 70%;
+}
+#Pcman {
+  width: 30%;
+  height: 30%;
+  position: relative;
+  cursor: pointer;
+}
+#Gosht {
+  width: 20%;
+  height: 20%;
+  position: relative;
+  cursor: pointer;
+  margin-top: 3.9vh;
 }
 
 @media (max-width: 800px) {
