@@ -1,0 +1,50 @@
+.coders {
+    width: 100%;
+    margin-top: 195px;
+    display: flex;
+    justify-content: space-around;
+    font-family: verdana;
+    font-size: 24px;
+    position: absolute;
+  }
+  .lista_muertos {
+    font-family: Nokia Cellphone FC;
+    font-size: 1em;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #bd280d;
+    padding-top: 4rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1em;
+    width: 37%;
+  }
+  
+  .lista_vivos {
+    font-family: Nokia Cellphone FC;
+    font-size: 1em;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding-top: 4rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1em;
+    width: 37%;
+  }
+  
+  .fantasma_vivo {
+    height: 80px;
+    margin-top: -80px;
+    margin-bottom: 10px;
+  }
+  
+  .fantasma_muerto {
+    height: 62px;
+    margin-top: -68px;
+    margin-bottom: 10px;
+  }
