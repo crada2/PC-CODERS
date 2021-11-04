@@ -1,5 +1,7 @@
 @import url(./reset.css);
 @import url(./main.css);
+@import url(./coder.css);
+@import url(./animation.css);
 @font-face {
   font-family: PAC-FONT;
   format: ("truetype");
@@ -30,171 +32,10 @@ h1 {
   font-size: 50px;
 }
 
-.botones {
-  position: absolute;
-  margin-top: 20px;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  top:15%;
-}
 
-#boton_reiniciar {
-  display: block;
-  margin: 0 auto;
-  width: 35%;
-  height: 70px;
-  font-family: Nokia Cellphone FC;
-  color:black;
-  font-size: 20px;
-  border-bottom: 5px solid #173814;
-  justify-content: center;
-  background: linear-gradient(#469e3f, #255b20);
-  border-radius: 0px 15px 15px 0px;
-  box-shadow: 0px 2px 10px grey;
-  transition: 150ms ease;
-  text-align: center;
-  line-height: 50px;
-  font-weight: bold;
-}
 
-#boton_reiniciar:active {
-  border: none;
-  border-bottom: 2px solid steelblue;
-  box-shadow: 0px 1px 5px grey;
-  background: linear-gradient(#255b20, #469e3f);
-  color: #fff;
-}
 
-.coders {
-  width: 100%;
-  margin-top: 195px;
-  display: flex;
-  justify-content: space-around;
-  font-family: verdana;
-  font-size: 24px;
-  position: absolute;
-}
 
-#boton_inicio {
-  display: block;
-  margin: 0 auto;
-  width: 35%;
-  height: 70px;
-  font-family: Nokia Cellphone FC;
-  color: red;
-  font-size: 20px;
-  border-bottom: 5px solid #eddc1c;
-  justify-content: center;
-  background: linear-gradient(#f3e762, #c2b30d);
-  border-radius: 15px 0px 0px 15px;
-  box-shadow: 0px 2px 10px grey;
-  transition: 150ms ease;
-  text-align: center;
-  line-height: 50px;
-  font-weight: bold;
-}
-
-#boton_inicio:active {
-  border: none;
-  border-bottom: 2px solid steelblue;
-  box-shadow: 0px 1px 5px grey;
-  background: linear-gradient(#e0cc12, #f7f312);
-  color: rgb(5, 5, 5);
-}
-
-#add_coder {
-  display: flex;
-  
-  font-family: Nokia Cellphone FC;
-  color:#ffffff;
-  margin-top: 8%;
-  width: 11%;
-  height: 46px;
-  border-radius: 15px;
-  border-bottom: 5px solid #5e116d;
-  justify-content: center;
-  background: linear-gradient(#751e86, #751e86);
-  box-shadow: 0px 2px 10px grey;
-  transition: 150ms ease;
-  text-align: center;
-  line-height: 21px;
-  font-weight: bold;
-
-}
-
-#newCoder {
-  display: flex;
-  margin-top: 15%;
-  font-family: Nokia Cellphone FC;
-  margin-top: 8%;
-  height: 45px;
-  border-radius: 15px;
-}
-
-.lista_muertos {
-  font-family: Nokia Cellphone FC;
-  font-size: 1em;
-  line-height: 42px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: #bd280d;
-  padding-top: 4rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-bottom: 1em;
-  width: 37%;
-}
-
-.lista_vivos {
-  font-family: Nokia Cellphone FC;
-  font-size: 1em;
-  line-height: 42px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: #fff;
-  padding-top: 4rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-bottom: 1em;
-  width: 37%;
-}
-
-.fantasma_vivo {
-  height: 80px;
-  margin-top: -80px;
-  margin-bottom: 10px;
-}
-
-.fantasma_muerto {
-  height: 62px;
-  margin-top: -68px;
-  margin-bottom: 10px;
-}
-
-footer {
-  position: absolute;
-  display: flex;
-  bottom: 0;
-}
-#Pcman {
-  width: 13%;
-  height: 13%;
-  position: relative;
-  cursor: pointer;
-  margin-top: 6%;
-  margin-left: 1.5%;
-}
-#Gosht {
-  width: 8%;
-  height: 8%;
-  position: relative;
-  cursor: pointer;
-  margin-top: 9%;
-  margin-left: 1%;
-}
 
 /*MEDIAS QUERYS*/
 @media (max-width: 375.5px) {
@@ -225,7 +66,7 @@ footer {
     margin-left: 6%;
 }
   #add_coder {
-    margin-top: 15%;
+    margin-top: 18%;
     width: 21%;
     height: 46px;
     border-radius: 14px;
@@ -235,7 +76,7 @@ footer {
 }
   
   #newCoder {
-    margin-top: 14%;
+    margin-top: 18%;
     font-size: 0.1em;
     height: 44px;
     width: 59%;
@@ -247,6 +88,7 @@ footer {
   display: flex;
   bottom: 0;
   margin-top: 5%;
+  margin-bottom: 27%;
 }
 #Pcman {
   width: 27%;
@@ -263,7 +105,7 @@ footer {
   margin-left: 15%;
 }
 .coders {
-  margin-top: 38%;
+  margin-top: 50%;
 
 }
 
