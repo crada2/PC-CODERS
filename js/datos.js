@@ -29,6 +29,10 @@ function indexAlAzar(max) {
 
 function killCoder() {
   let randomKill = indexAlAzar(listaVivos.length);
+  let etiquetaAudio = document.createElement("audio")
+      etiquetaAudio.setAttribute("src", "./AUDIO/pcman audio corto.mp3")
+      etiquetaAudio.play()
+      
 
   if (listaVivos.length > 0) {
     let programadorMuerto = listaVivos[randomKill];
